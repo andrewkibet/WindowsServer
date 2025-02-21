@@ -21,3 +21,14 @@ Install IIS (Internet Information Services) on both servers.
 Create a simple webpage (index.html) with different content on each server.
 Open a browser and enter the Cluster IP – It should distribute traffic between servers.
 
+## Benefits of migrating from a Classic Load Balancer
+
+Using a Network Load Balancer instead of a Classic Load Balancer has the following benefits:
+
+Ability to handle volatile workloads and scale to millions of requests per second.
+
+Support for static IP addresses for the load balancer. You can also assign one Elastic IP address per subnet enabled for the load balancer.
+
+Support for registering targets by IP address, including targets outside the VPC for the load balancer.
+
+
