@@ -27,5 +27,8 @@ Using a Network Load Balancer instead of a Classic Load Balancer has the followi
 1. Ability to handle volatile workloads and scale to millions of requests per second.
 2. Support for static IP addresses for the load balancer. You can also assign one Elastic IP address per subnet enabled for the load balancer.
 3. Support for registering targets by IP address, including targets outside the VPC for the load balancer.
+4. Support for routing requests to multiple applications on a single EC2 instance. You can register each instance or IP address with the same target group using multiple ports.
+5. Support for containerized applications. Amazon Elastic Container Service (Amazon ECS) can select an unused port when scheduling a task and register the task with a target group using this port. This enables you to make efficient use of your clusters.
+6. Support for monitoring the health of each service independently, as health checks are defined at the target group level and many Amazon CloudWatch metrics are reported at the target group level. Attaching a target group to an Auto Scaling group enables you to scale each service dynamically based on demand
 
 
