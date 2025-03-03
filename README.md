@@ -29,6 +29,14 @@ Using a Network Load Balancer instead of a Classic Load Balancer has the followi
 3. Support for registering targets by IP address, including targets outside the VPC for the load balancer.
 4. Support for routing requests to multiple applications on a single EC2 instance. You can register each instance or IP address with the same target group using multiple ports.
 5. Support for containerized applications. Amazon Elastic Container Service (Amazon ECS) can select an unused port when scheduling a task and register the task with a target group using this port. This enables you to make efficient use of your clusters.
-6. Support for monitoring the health of each service independently, as health checks are defined at the target group level and many Amazon CloudWatch metrics are reported at the target group level. Attaching a target group to an Auto Scaling group enables you to scale each service dynamically based on demand
+6. Support for monitoring the health of each service independently, as health checks are defined at the target group level and many Amazon CloudWatch metrics are reported at the target group level. Attaching a target group to an Auto Scaling group enables you to scale each service dynamically based on demand.
+
+A cluster is a group of interconnected computers or servers that work together as a single system to improve performance, availability, and scalability. Clusters are commonly used in networking, cloud computing, and data centers to distribute workloads efficiently.
+
+Types of Clusters
+High-Availability (HA) Cluster – Ensures system uptime by automatically shifting workloads if one node fails.
+Load Balancing Cluster – Distributes network traffic among multiple servers for efficiency.
+Storage Cluster – Multiple servers store and manage data together (e.g., in cloud storage).
+HPC Cluster (High-Performance Computing) – Used for computational tasks like simulations or AI processing.
 
 
